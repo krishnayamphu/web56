@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .box1{
+            background-color: darkgreen;
+            z-index: 1;
+        }
+        .box2{
+            background-color: darkblue;
+            top: 50px;
+            left: 50px;
+        }
+        .box3{
+            background-color: darkred;
+            top: 100px;
+            left: 100px;
+            z-index: -1;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+</body>
+</html>
