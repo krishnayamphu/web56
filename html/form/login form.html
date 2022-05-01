@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        form{
+            width: 400px;
+            background-color: aquamarine;
+            padding: 15px;
+            margin: 50px auto;
+        }
+        form label{
+            display: block;
+            font-family: Arial;
+            padding-bottom: 5px;
+        }
+        form input{
+            display: block;
+            width: 94%;
+            margin-bottom: 15px;
+            padding: 5px 10px;
+            border: 1px solid red;
+        }
+        form input:focus{
+            outline: none;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password">
+
+    <button type="submit">Login</button>
+</form>
+</body>
+</html>
