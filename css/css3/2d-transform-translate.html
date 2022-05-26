@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            margin: 15px;
+            float: left;
+        }
+        div:nth-child(even){
+            background-color: green;
+        }
+
+        .box1:hover {
+            transition: all 1s;
+            transform: translate(100px,100px);
+        }
+        .box2:hover{
+            transition: all 1s;
+            transform: translate(100px,0);
+        }
+        .box3:hover{
+            transition: all 1s linear;
+            transform: translate(0px,100px);
+        }
+       .box4:hover{
+           transition: all 1s linear;
+           transform: translate(-100px,-100px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="box1">box</div>
+<div class="box2">box</div>
+<div class="box3">box</div>
+<div class="box4">box</div>
+
+</body>
+</html>

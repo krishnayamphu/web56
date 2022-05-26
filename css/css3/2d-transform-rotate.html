@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            margin: 15px;
+            float: left;
+        }
+
+        .box1 {
+            transform: rotate(45deg);
+        }
+        .box2:hover{
+            transition: all 1s;
+            transform: rotate(-360deg);
+        }
+        .box3:hover{
+            transition: all 1s linear;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="box1">box</div>
+<div class="box2">box</div>
+<div class="box3">box</div>
+
+</body>
+</html>

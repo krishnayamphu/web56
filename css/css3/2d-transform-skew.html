@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            margin: 15px;
+            float: left;
+        }
+        div:nth-child(even){
+            background-color: green;
+        }
+
+        .box1:hover {
+            transition: all 1s;
+            transform: skew(10deg,45deg);
+        }
+        .box2:hover{
+            transition: all 1s;
+            transform: skew(77deg,65deg);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box1">box</div>
+<div class="box2">box</div>
+
+
+</body>
+</html>
