@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3</title>
+    <style>
+        .container1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 30px;
+            perspective: 200px;
+            float: left;
+        }
+        .container1 .box{
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            transition: all 1s;
+        }
+        .container1 .box:hover{
+            transform: rotateX(180deg);
+        }
+
+        .container2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 30px;
+            perspective: 200px;
+            float: left;
+        }
+        .container2 .box{
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            transition: all 1s;
+        }
+        .container2 .box:hover{
+            transform: rotateY(180deg);
+        }
+
+        .container3{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 30px;
+            perspective: 200px;
+            float: left;
+        }
+        .container3 .box{
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            transition: all 1s;
+        }
+        .container3 .box:hover{
+            transform: rotateZ(360deg);
+        }
+
+        .container4{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 30px;
+            perspective: 200px;
+            float: left;
+        }
+        .container4 .box{
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            transition: all 1s;
+        }
+        .container4 .box:hover{
+            transform: rotate3d(10,10,10,360deg);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <div class="box">Box</div>
+</div>
+
+<div class="container2">
+    <div class="box">Box</div>
+</div>
+
+<div class="container3">
+    <div class="box">Box</div>
+</div>
+
+<div class="container4">
+    <div class="box">Box</div>
+</div>
+</body>
+</html>
