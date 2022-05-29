@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3</title>
+    <style>
+        .container1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 30px auto;
+            padding: 30px;
+            perspective: 100px;
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            transition: all 1s;
+
+
+        }
+        .box1:hover{
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: green;
+            transition: all 1s;
+
+
+        }
+        .box2:hover{
+            transform: rotateY(180deg);
+            backface-visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <div class="box1">Box</div>
+    <div class="box2">Box</div>
+</div>
+</body>
+</html>

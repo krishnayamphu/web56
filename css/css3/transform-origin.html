@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3</title>
+    <style>
+        .container1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 30px;
+            perspective: 200px;
+            float: left;
+        }
+        .container1 .box{
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            transition: all 1s;
+            transform: rotateY(45deg);
+            transform-origin: 50% 50% 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <div class="box">Box</div>
+</div>
+</body>
+</html>
