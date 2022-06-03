@@ -1,0 +1,27 @@
+body{
+    background-color: aquamarine;
+    font-family: Arial;
+}
+header{
+    text-align: center;
+}
+nav{
+    background-color: darkgreen;
+    margin-bottom: 30px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    padding: 8px 20px;
+    display: inline-block;
+    color:white;
+}
+nav a:hover{
+    background-color: green;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 15px 30px;
+}
