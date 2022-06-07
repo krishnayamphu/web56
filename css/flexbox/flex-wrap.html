@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            width: 300px;
+            border: 1px solid red;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        .item{
+            background-color: #1abc9c;
+            width: 150px;
+        }
+        .item:nth-child(even){
+            background-color: orange;
+        }
+
+        .flex-nowrap{
+            flex-wrap: nowrap;
+        }
+        .flex-wrap{
+            flex-wrap: wrap;
+        }
+        .flex-wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container flex-nowrap">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container flex-wrap">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container flex-wrap-reverse">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+</body>
+</html>

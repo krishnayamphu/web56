@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            /*padding: 15px;*/
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        .item{
+            background-color: #1abc9c;
+            padding: 15px;
+        }
+        .item:nth-child(even){
+            background-color: orange;
+        }
+        .jc-flex-start{
+            justify-content: flex-start;
+        }
+        .jc-center{
+            justify-content: center;
+        }
+        .jc-flex-end{
+            justify-content: flex-end;
+        }
+        .jc-space-between{
+            justify-content: space-between;
+        }
+        .jc-space-around{
+            justify-content: space-around;
+        }
+        .jc-space-evenly{
+            justify-content: space-evenly;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container jc-flex-start">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container jc-center">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container jc-flex-end">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container jc-space-between">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container jc-space-around">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container jc-space-evenly">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+</body>
+</html>

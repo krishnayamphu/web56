@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            /*padding: 15px;*/
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 150px;
+        }
+
+        .item{
+            background-color: #1abc9c;
+            width: 100%;
+        }
+        .item:nth-child(even){
+            background-color: orange;
+        }
+
+        .align-content-stretch{
+            align-content: stretch;
+        }
+
+        .align-content-center{
+            align-content: center;
+        }
+        .align-content-flex-start{
+            align-content: flex-start;
+        }
+
+        .align-content-flex-end{
+            align-content: flex-end;
+        }
+
+        .align-content-space-between{
+            align-content: space-between;
+        }
+
+        .align-content-space-around{
+            align-content: space-around;
+        }
+        .align-content-space-evenly{
+            align-content: space-evenly;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container align-content-stretch">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container align-content-center">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container align-content-flex-start">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container align-content-flex-end">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container align-content-space-between">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container align-content-space-around">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container align-content-space-evenly">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+</body>
+</html>
