@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            margin-bottom: 15px;
+            display: flex;
+            height: 150px;
+            align-items: center;
+        }
+
+        .item{
+            background-color: #1abc9c;
+            padding: 5px 10px;
+        }
+        .item:nth-child(even){
+            background-color: orange;
+        }
+        .align-top{
+            align-self: flex-start;
+        }
+        .align-bottom{
+            align-self: flex-end;
+        }
+        .align-stretch{
+            align-self: stretch;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container">
+    <div class="item align-top">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+
+<div class="container">
+    <div class="item align-bottom">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container">
+    <div class="item">Item 1</div>
+    <div class="item align-stretch">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+</body>
+</html>

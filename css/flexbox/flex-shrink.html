@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            margin-bottom: 15px;
+            display: flex;
+            width: 400px;
+        }
+
+        .item{
+            background-color: #1abc9c;
+            flex-basis: 200px;
+            flex-shrink: 1;
+        }
+        .item:nth-child(even){
+            background-color: orange;
+            flex-shrink: 3;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+</body>
+</html>

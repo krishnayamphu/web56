@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        .item{
+            background-color: #1abc9c;
+        }
+        .item:nth-child(even){
+            background-color: orange;
+        }
+        .flex-grow{
+            flex-grow: 1;
+        }
+        .flex-grow-2{
+            flex-grow: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container">
+    <div class="item flex-grow">Item 1</div>
+    <div class="item flex-grow ">Item 2</div>
+    <div class="item flex-grow">Item 3</div>
+</div>
+
+<div class="container">
+    <div class="item flex-grow">Item 1</div>
+    <div class="item flex-grow flex-grow-2">Item 2</div>
+    <div class="item flex-grow">Item 3</div>
+</div>
+
+</body>
+</html>

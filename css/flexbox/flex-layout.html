@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #cccccc;
+        }
+
+        .row {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .col {
+            background-color: #1abc9c;
+            flex-grow: 1;
+            padding: 15px;
+        }
+
+        .col:nth-child(even) {
+            background-color: orange;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+
+    <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda, beatae, error hic
+            ipsam minima mollitia natus optio quod repellendus similique, ullam veritatis voluptatibus. Ab consequatur
+            eius illo veritatis voluptatibus!</p>
+        </div>
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda, beatae, error hic
+                ipsam minima mollitia natus optio quod repellendus similique, ullam veritatis voluptatibus. Ab consequatur
+                eius illo veritatis voluptatibus!</p>
+        </div>
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda, beatae, error hic
+            ipsam minima mollitia natus optio quod repellendus similique, ullam veritatis voluptatibus. Ab consequatur
+            eius illo veritatis voluptatibus!</p></div>
+    </div>
+</div>
+
+</body>
+</html>

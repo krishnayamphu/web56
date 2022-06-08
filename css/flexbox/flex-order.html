@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        .item{
+            background-color: #1abc9c;
+            padding: 5px 10px;
+        }
+        .item:nth-child(even){
+            background-color: orange;
+        }
+        .order-1{
+            order:1;
+        }
+        .order-2{
+            order:2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container">
+    <div class="item order-3">Item 1</div>
+    <div class="item order-2">Item 2</div>
+    <div class="item order-1">Item 3</div>
+</div>
+
+
+<div class="container">
+    <div class="item order-3">Item 1</div>
+    <div class="item order-1">Item 2</div>
+    <div class="item order-2">Item 3</div>
+</div>
+</body>
+</html>
