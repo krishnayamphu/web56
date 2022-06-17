@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+<script>
+    let en=parseFloat(prompt("English",""));
+    let ne=parseFloat(prompt("Nepali",""));
+    let p=0;
+    if(en>=35 && ne>=35){
+        document.write("Result: Pass<br>");
+        p=(ne+en)/2;
+        if(p>=80){
+            document.write("Distinction");
+        }else if(p>=60){
+            document.write("First");
+        }else if(p>=45){
+            document.write("Second");
+        }else{
+            document.write("Third");
+        }
+    }else{
+        document.write("Fail");
+    }
+
+
+</script>
+</body>
+</html>
