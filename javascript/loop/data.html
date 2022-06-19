@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+
+<form action="#">
+    <label>Date of Birth:</label>
+    <select>
+        <script>
+            let i = 1900;
+            while (i <= 2022) {
+                document.write("<option>"+i+"</option>");
+                i++;
+            }
+        </script>
+    </select>
+
+    <select>
+        <script>
+            for (i=1;i<=12; i++) {
+                document.write("<option>"+i+"</option>");
+            }
+        </script>
+    </select>
+
+    <select>
+        <script>
+            for (i=1;i<=31; i++) {
+                document.write("<option>"+i+"</option>");
+            }
+        </script>
+    </select>
+</form>
+
+</body>
+</html>
