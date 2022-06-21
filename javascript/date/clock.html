@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+
+<form name="f">
+    <input type="text" name="clock">
+</form>
+<script>
+function digitalClock(){
+    let time=new Date();
+    let h=time.getHours();
+    if(h>=12){
+        h=h-12;
+    }
+    let m=time.getMinutes();
+    let s=time.getSeconds();
+    let ms=time.getMilliseconds();
+    document.forms['f'].clock.value=h+":"+m+":"+s+":"+ms;
+}
+
+setInterval("digitalClock()",1);
+</script>
+
+
+</body>
+</html>

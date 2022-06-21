@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+<form name="f">
+    <input type="text" name="user" placeholder="username"><br>
+    <br>
+    <input type="password" name="pass" placeholder="password">
+    <br><br>
+    <button type="button" onclick="auth()">Login</button>
+</form>
+
+<script>
+    function auth(){
+        let f=document.forms['f'];
+        let user=f.user.value;
+        let password=f.pass.value;
+        if(user=="admin" && password=="a123"){
+            alert("welcome Admin");
+        }else{
+            alert("Invalid Username or Password");
+        }
+
+    }
+
+</script>
+</body>
+</html>

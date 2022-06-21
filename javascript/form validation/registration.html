@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+<form name="f" onsubmit="return register()">
+    <input type="text" name="user" placeholder="username" required><br>
+    <br>
+    <input type="password" name="pass" placeholder="password" required>
+    <br><br>
+    <input type="password" name="cpass" placeholder="confirm password" required>
+    <br><br>
+    <button type="submit">Login</button>
+</form>
+
+<script>
+    function register(){
+        let f=document.forms['f'];
+        let user=f.user.value;
+        let password=f.pass.value;
+        let cpassword=f.cpass.value;
+        if(password==cpassword){
+            alert("Registration Success");
+            return true;
+        }else{
+            alert("Confirm password do not match");
+            f.cpass.select();
+            return false;
+        }
+
+
+    }
+
+</script>
+</body>
+</html>
