@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <style>
+        p {
+            padding: 15px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<button id="btn1">FadeOut</button>
+<button id="btn2">FadeIn</button>
+<button id="btn3">FadeToggle</button>
+<button id="btn4">FadeTo</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolores error ipsa minus, officiis ratione rem
+    reprehenderit temporibus vel! Commodi dolorem est nemo quia recusandae veniam voluptatem? Aspernatur, debitis
+    reiciendis!</p>
+
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        /*
+        $(selector).slideUp(speed,callback);
+       */
+
+        $("#btn1").click(function () {
+            $("p").fadeOut(1000);
+        });
+
+        $("#btn2").click(function () {
+            $("p").fadeIn(1000);
+        });
+
+        $("#btn3").click(function () {
+            $("p").fadeToggle(1000);
+        });
+
+        $("#btn4").click(function () {
+            $("p").fadeTo(1000,0.5);
+        });
+
+    });
+</script>
+</body>
+</html>

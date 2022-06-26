@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <style>
+        p {
+            padding: 15px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<button id="btn1">Animate</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolores error ipsa minus, officiis ratione rem
+    reprehenderit temporibus vel! Commodi dolorem est nemo quia recusandae veniam voluptatem? Aspernatur, debitis
+    reiciendis!</p>
+
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+
+        $("#btn1").click(function () {
+            $("p").animate({
+                "width":"50%",
+                "fontSize":"30px"
+            },1000);
+        });
+    });
+</script>
+</body>
+</html>
