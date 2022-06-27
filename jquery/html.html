@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+</head>
+<body>
+<div id="box1"></div>
+<article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae consequuntur eos et maxime mollitia
+        nihil placeat reiciendis totam vel.</p>
+</article>
+
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#box1").html("Welcome to <strong>jQuery</strong>");
+        let data=$("article").html();
+        alert(data);
+
+    });
+</script>
+</body>
+</html>

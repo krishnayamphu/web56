@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <style>
+        p{
+            padding: 15px;
+            text-align: center;
+            margin: 60px;
+            background-color: orangered;
+        }
+        div{height: 20px;
+        background-color: #1abc9c;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+<button id="btn1">before</button>
+<button id="btn2">after</button>
+
+<p>Sample Text</p>
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#btn1").click(function () {
+                $("p").before("<div>Hey</div> ");
+            }
+        );
+        $("#btn2").click(function () {
+                $("p").after("<div>Hey</div> ");
+            }
+        );
+
+
+    });
+</script>
+</body>
+</html>
