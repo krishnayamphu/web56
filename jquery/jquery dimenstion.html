@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            padding: 10px;
+            border: 10px solid red;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<button id="btn1">width</button>
+<button id="btn2">height</button>
+
+
+<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad atque, autem consectetur deserunt eius et
+    eveniet incidunt nemo praesentium recusandae voluptatum. Animi culpa eligendi est fugiat ipsa, quaerat
+    ullam.
+</div>
+
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#btn1").click(function () {
+                alert($(".box").outerWidth(true));
+            }
+        );
+        $("#btn2").click(function () {
+            alert($(".box").height());
+            }
+        );
+    });
+</script>
+</body>
+</html>

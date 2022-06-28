@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <style>
+        *{
+            font-family: Arial;
+            box-sizing: border-box;
+
+        }
+        h1{
+            padding: 15px;
+        }
+        p{
+            padding: 15px;
+            line-height: 30px;
+        }
+        header{
+            background-color: #1abc9c;
+            padding: 50px 0;
+        }
+        #txtbox{
+            position: fixed;
+            top: 50%;
+            right: 0;
+        }
+        #top{
+            width: 50px;
+            height: 50px;
+            background-color: #1a252f;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Jquery Documentation</h1>
+</header>
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<h1>jQuery API</h1>
+<p>jQuery API jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+<p>If you're updating to a newer version of jQuery, be sure to read the release notes published on our blog. If you're coming from a version prior 1.9, you should check out the 1.9 Upgrade Guide as well.</p>
+
+<input id="txtbox" type="text">
+<a id="top" href="#">Top</a>
+<script src="jquery.min.js"></script>
+<script>
+$(document).scroll(function (){
+    let dh=$("body").height();
+    let vh=$(document).scrollTop();
+    $("#txtbox").val(vh);
+   if(vh>=dh/3){
+       $("#top").css({"display":"block"});
+   }else{
+       $("#top").css({"display":"none"});
+   }
+
+});
+
+</script>
+</body>
+</html>

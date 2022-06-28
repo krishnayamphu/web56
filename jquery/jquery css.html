@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+</head>
+<body>
+<button id="btn1">Add css</button>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad atque, autem consectetur deserunt eius et
+    eveniet incidunt nemo praesentium recusandae voluptatum. Animi culpa eligendi est fugiat ipsa, quaerat
+    ullam.</p>
+
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#btn1").click(function () {
+                $("p").css({
+                    "color":"green",
+                    "background":"black",
+                    "padding":"15px"
+                });
+            }
+        );
+    });
+</script>
+</body>
+</html>
