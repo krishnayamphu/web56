@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            padding: 15px;
+            width: 70%;
+            margin:50px auto;
+        }
+    </style>
+</head>
+<body>
+<button id="btn1">Load Data</button>
+<button id="btn2">Get data</button>
+<div class="container">
+
+</div>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+        $("#btn1").click(function (){
+            $(".container").load("demo.txt");
+        });
+
+        $("#btn2").click(function(){
+            $(".container").load("demoperon.txt", function(responseTxt, statusTxt, xhr){
+                if(statusTxt == "success")
+                    alert("External content loaded successfully!");
+                if(statusTxt == "error")
+                    alert("Error: " + xhr.status + ": " + xhr.statusText);
+            });
+        });
+    });
+</script>
+</body>
+</html>
