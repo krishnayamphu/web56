@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            width: 200px;
+            height: 150px;
+            border: 2px solid red;
+            float: left;
+            margin: 15px;
+            padding: 15px;
+            line-height: 1.5;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .hidden-x {
+            overflow-x: hidden;
+        }
+
+        .hidden-y {
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="visible">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat provident, molestias officiis error excepturi
+        commodi ipsum repellendus fugit maxime in veniam eos modi temporibus voluptatibus fuga. Error nam repellendus
+        amet!
+    </div>
+    <div class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat provident, molestias officiis error excepturi
+        commodi ipsum repellendus fugit maxime in veniam eos modi temporibus voluptatibus fuga. Error nam repellendus
+        amet!
+    </div>
+    <div class="scroll">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat provident, molestias officiis error excepturi
+        commodi ipsum repellendus fugit maxime in veniam eos modi temporibus voluptatibus fuga. Error nam repellendus
+        amet!
+    </div>
+
+    <div class="hidden">
+        <img src="temple.jpg" alt="">
+    </div>
+    <div class="hidden-x">
+        <img src="temple.jpg" alt="">
+    </div>
+    <div class="hidden-y">
+        <img src="temple.jpg" alt="">
+    </div>
+
+
+
+</body>
+
+</html>
