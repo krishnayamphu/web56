@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 30px;
+        }
+
+        th,
+        td {
+            border: 1px solid red;
+            padding: 5px;
+        }
+
+        thead {
+            background-color: brown;
+        }
+
+        tfoot {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>Patan</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="2">Amount</th>
+        </tr>
+        <tr>
+            <th>Rs</th>
+            <th>Paisa</th>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <th rowspan="2">Country</th>
+            <td>Nepal</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Items</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pen</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>copy</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>Total</th>
+                <th>150</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
