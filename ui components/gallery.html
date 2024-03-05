@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery {
+            width: 80%;
+            margin: 30px auto;
+            border: 5px solid green;
+            padding: 5px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.8;
+            transition: all 0.3s;
+        }
+
+        .gallery img:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="gallery">
+        <img src="images/oliver.jpg" alt="">
+        <img src="images/temple.jpg" alt="">
+        <img src="images/luca-dross.jpg" alt="">
+        <img src="images/marta-dzedyshko.jpg" alt="">
+        <img src="images/mikkel-kvist.jpg" alt="">
+        <img src="images/tahir-osman.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
