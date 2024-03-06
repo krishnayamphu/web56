@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        :root {
+            --primary-color: rgb(207, 82, 10);
+            --text-color: rgb(209, 28, 28);
+        }
+
+        h1 {
+            color: var(--primary-color, green);
+        }
+
+        p {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .box1 {
+            height: 100px;
+            width: 50%;
+            background-color: var(--primary-color);
+        }
+
+        ul li {
+            color: var(--text-color);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus nesciunt autem consectetur quisquam
+        doloribus ipsa impedit facere mollitia enim veritatis voluptatem ab ea dolore totam, consequuntur, fugiat qui
+        perspiciatis!</p>
+
+    <div class="box1"></div>
+
+    <ul>
+        <li>List 1</li>
+        <li>List 1</li>
+        <li>List 1</li>
+        <li>List 1</li>
+    </ul>
+</body>
+
+</html>
