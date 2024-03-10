@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <title>form</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type='checkbox'],
+        input[type='radio'] {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Form</legend>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="enter name" value="hello" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="enter password">
+
+            <label>Email</label>
+            <input type="email" placeholder="enter email">
+
+            <label>Number</label>
+            <input type="number" step="5">
+
+            <label>Search</label>
+            <input type="search" placeholder="search">
+
+            <label>Checkbox</label>
+            <input type="checkbox" checked> Checkbox 1
+            <input type="checkbox"> Checkbox 2
+
+            <label>Radio</label>
+            <input type="radio" name="gender" checked> Male
+            <input type="radio" name="gender"> Female
+
+            <label>File</label>
+            <input type="file" multiple>
+
+            <input type="hidden" value="hidden-value">
+
+            <label>Date</label>
+            <input type="date">
+
+            <label>Time</label>
+            <input type="time">
+
+            <label>Datetime-Local</label>
+            <input type="datetime-local">
+
+            <label>Month</label>
+            <input type="month">
+
+            <label>Range</label>
+            <input type="range" min="0" max="100" value="25">
+
+            <label>Color</label>
+            <input type="color">
+
+            <label>Textarea</label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+
+            <label>Select</label>
+            <select name="" id="">
+                <optgroup label="Asia">
+                    <option value="">Nepal</option>
+                    <option value="">Japan</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="" selected>France</option>
+                    <option value="">Spain</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
