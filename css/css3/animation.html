@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        @keyframes animate {
+            from {
+                background-color: red;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(500%) rotateZ(360deg);
+                border-radius: 50%;
+            }
+
+        }
+
+        @keyframes setTextSize {
+            0% {
+                font-size: 16px;
+            }
+
+            100% {
+                font-size: 32px;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: animate;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 30px 0;
+            animation: move 2s alternate infinite;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: setTextSize 1s infinite linear alternate;
+
+        }
+
+        .container {
+            width: 200px;
+            padding: 15x;
+            border: 1px solid red;
+            margin: 30px auto;
+            perspective: 500px;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: rotate 2s alternate infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <h1 class="">Hello World</h1>
+
+    <div class="container">
+        <div class="item">box</div>
+    </div>
+</body>
+
+</html>

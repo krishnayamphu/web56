@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox | Container</title>
+    <style>
+        .row {
+            border: 1px solid red;
+            margin: 30px;
+            display: flex;
+            width: 400px;
+        }
+
+        .col {
+            background-color: aquamarine;
+            width: 200px;
+        }
+
+        .col:nth-child(even) {
+            background-color: orange;
+        }
+
+        .col:last-child {
+            background-color: blueviolet;
+        }
+
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row nowrap">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+    </div>
+
+    <div class="row wrap">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+    </div>
+
+    <div class="row wrap-reverse">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+    </div>
+</body>
+
+</html>
