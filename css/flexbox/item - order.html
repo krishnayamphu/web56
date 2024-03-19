@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox | Items</title>
+    <style>
+        .row {
+            border: 1px solid red;
+            margin: 30px;
+            display: flex;
+        }
+
+        .col {
+            background-color: aquamarine;
+        }
+
+        .col:nth-child(even) {
+            background-color: orange;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+    </div>
+    <div class="row">
+        <div class="col order-2">col1</div>
+        <div class="col order-1">col2</div>
+        <div class="col">col3</div>
+    </div>
+
+    <div class="row">
+        <div class="col order-3">col1</div>
+        <div class="col order-2">col2</div>
+        <div class="col order-1">col3</div>
+    </div>
+
+
+
+</body>
+
+</html>

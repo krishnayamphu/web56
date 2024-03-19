@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox | Items</title>
+    <style>
+        .row {
+            border: 1px solid red;
+            margin: 30px;
+            display: flex;
+            height: 100px;
+            align-items: flex-start;
+        }
+
+        .col {
+            background-color: aquamarine;
+        }
+
+        .col:nth-child(even) {
+            background-color: orange;
+        }
+
+        .align-center {
+            align-self: center;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+    </div>
+    <div class="row">
+        <div class="col">col1</div>
+        <div class="col align-center">col2</div>
+        <div class="col">col3</div>
+    </div>
+
+    <div class="row">
+        <div class="col">col1</div>
+        <div class="col flex-end">col2</div>
+        <div class="col">col3</div>
+    </div>
+
+
+
+</body>
+
+</html>

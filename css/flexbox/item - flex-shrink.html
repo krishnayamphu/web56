@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox | Items</title>
+    <style>
+        .row {
+            border: 1px solid red;
+            margin: 30px;
+            display: flex;
+            width: 300px;
+        }
+
+        .col {
+            background-color: aquamarine;
+            width: 200px;
+        }
+
+        .col:nth-child(even) {
+            background-color: orange;
+        }
+
+        .shrink-0 {
+            flex-shrink: 0;
+        }
+
+        .shrink-1 {
+            flex-shrink: 1;
+        }
+
+        .shrink-2 {
+            flex-shrink: 2;
+        }
+
+        .shrink-3 {
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col shrink-1">col1</div>
+        <div class="col shrink-1">col2</div>
+        <div class="col shrink-1">col3</div>
+    </div>
+    <div class="row">
+        <div class="col shrink-1">col1</div>
+        <div class="col shrink-2">col2</div>
+        <div class="col shrink-1">col3</div>
+    </div>
+
+    <div class="row">
+        <div class="col shrink-1">col1</div>
+        <div class="col shrink-2">col2</div>
+    </div>
+
+    <div class="row">
+        <div class="col shrink-1">col1</div>
+        <div class="col shrink-3">col2</div>
+        <div class="col shrink-1">col1</div>
+    </div>
+
+
+
+</body>
+
+</html>
