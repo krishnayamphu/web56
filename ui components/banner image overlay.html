@@ -13,21 +13,24 @@
 
       .banner {
         width: 100%;
-        height: 300px;
-        background-image: url(images/oliver.jpg);
+        height: 100vh;
+        display: flex;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.408),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(images/oliver.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-      }
-      .banner-overlay {
-        background-color: rgba(0, 0, 0, 0.3);
+        justify-content: center;
+        align-items: center;
       }
 
       .banner h1 {
-        text-align: center;
         font-size: 100px;
         color: whitesmoke;
-        line-height: 300px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.575);
       }
 
       .container {
@@ -50,9 +53,7 @@
 
   <body>
     <div class="banner">
-      <div class="banner-overlay">
-        <h1>Banner Design</h1>
-      </div>
+      <h1>Banner Design</h1>
     </div>
     <div class="container">
       <h1>Hello World</h1>
