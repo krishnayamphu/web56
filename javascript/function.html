@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      function hello() {
+        document.write("Hello World");
+      }
+      hello();
+
+      function sum(a, b) {
+        document.write("<br>Total sum: " + (a + b));
+      }
+      sum(4, 5);
+
+      function getMaxSpeed() {
+        return 120;
+      }
+      document.write("<br>Maximum bike speed limit is: " + getMaxSpeed());
+
+      function getDiscount(price) {
+        return (price * 10) / 100;
+      }
+
+      document.write("<br>discount price: " + getDiscount(5000));
+    </script>
+  </body>
+</html>
