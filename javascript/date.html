@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      const datetime = new Date();
+      const y = datetime.getFullYear();
+      const mo = datetime.getMonth() + 1; //0-11
+      const d = datetime.getDate();
+      const dd = datetime.getDay() + 1; //0-6
+
+      const h = datetime.getHours();
+      const m = datetime.getMinutes();
+      const s = datetime.getSeconds();
+      const ms = datetime.getMilliseconds();
+
+      document.write(datetime);
+      document.write("<br>" + y + " - " + mo + " - " + d + ", " + dd);
+      document.write("<br>" + h + " : " + m + " : " + s + " : " + ms);
+    </script>
+  </body>
+</html>
