@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      input {
+        font-size: 32px;
+        padding: 10px;
+        width: 130px;
+        margin: 20px auto;
+        display: block;
+        background-color: rgb(215, 215, 215);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0px 1px #222;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="tbox" type="text" />
+    <script>
+      setInterval(clock, 1000);
+      function clock() {
+        let time = new Date();
+        let h = time.getHours();
+        if (h > 12) {
+          h = h - 12;
+        }
+        let m = time.getMinutes();
+        let s = time.getSeconds();
+        document.getElementById("tbox").value = h + ":" + m + ":" + s;
+      }
+
+      clock();
+    </script>
+  </body>
+</html>
