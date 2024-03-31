@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      const cat = {
+        name: "Ketty",
+        color: "Brown",
+        sleep: function () {
+          document.write("<p>Ketty is sleeping</p>");
+        },
+        eat: function () {
+          document.write("<p>Ketty is eating food</p>");
+        },
+        getWeight: function (w) {
+          return w;
+        },
+      };
+
+      document.write("<p>Cat name: " + cat.name + "</p>");
+      document.write("<p>Cat color: " + cat.color + "</p>");
+      cat.eat();
+      cat.sleep();
+      document.write("<p>Cat weight: " + cat.getWeight(8) + "kg</p>");
+    </script>
+  </body>
+</html>
