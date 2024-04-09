@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        background-color: antiquewhite;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Animate</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde
+      perferendis ratione fugit tempora. Vitae molestiae vero laborum placeat,
+      autem, mollitia fugit nemo modi at laudantium, iure vel distinctio!
+      Doloremque?
+    </p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p")
+            .hide(1000)
+            .show(3000)
+            .slideUp(2000)
+            .slideDown(3000)
+            .fadeOut(5000, function () {
+              alert("animation complete");
+            });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        background-color: antiquewhite;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">SlideUp</button>
+    <button id="btn2">SlideDown</button>
+    <button id="btn3">SlideToggle</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde
+      perferendis ratione fugit tempora. Vitae molestiae vero laborum placeat,
+      autem, mollitia fugit nemo modi at laudantium, iure vel distinctio!
+      Doloremque?
+    </p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //slideup paragraph
+        $("#btn1").click(function () {
+          $("p").slideUp(1000);
+        });
+
+        //slidedown paragraph
+        $("#btn2").click(function () {
+          $("p").slideDown(1000);
+        });
+
+        //toggle paragraph
+        $("#btn3").click(function () {
+          $("p").slideToggle(1000);
+        });
+      });
+    </script>
+  </body>
+</html>
