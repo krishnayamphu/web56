@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+  </head>
+  <body>
+    <button id="btn1">Get Html</button>
+    <button id="btn2">Set Html</button>
+
+    <p>This is <strong>paragraph</strong></p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          alert($("p").html());
+        });
+
+        $("#btn2").click(function () {
+          $("p").html("<em>Hello World</em>");
+        });
+      });
+    </script>
+  </body>
+</html>
