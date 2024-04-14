@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #top {
+        width: 50px;
+        height: 50px;
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        background-color: brown;
+        text-decoration: none;
+        color: white;
+        position: fixed;
+        right: 0;
+        bottom: 5%;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Get Dimension</button>
+    <div class="box">Box</div>
+
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum
+      molestiae tempora dignissimos. Ex, neque tenetur quos, pariatur, culpa
+      soluta cumque consectetur aperiam eaque corrupti sit veritatis atque.
+      Aperiam, vero.
+    </p>
+
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum
+      molestiae tempora dignissimos. Ex, neque tenetur quos, pariatur, culpa
+      soluta cumque consectetur aperiam eaque corrupti sit veritatis atque.
+      Aperiam, vero.
+    </p>
+
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum
+      molestiae tempora dignissimos. Ex, neque tenetur quos, pariatur, culpa
+      soluta cumque consectetur aperiam eaque corrupti sit veritatis atque.
+      Aperiam, vero.
+    </p>
+
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum
+      molestiae tempora dignissimos. Ex, neque tenetur quos, pariatur, culpa
+      soluta cumque consectetur aperiam eaque corrupti sit veritatis atque.
+      Aperiam, vero.
+    </p>
+
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum
+      molestiae tempora dignissimos. Ex, neque tenetur quos, pariatur, culpa
+      soluta cumque consectetur aperiam eaque corrupti sit veritatis atque.
+      Aperiam, vero.
+    </p>
+
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum
+      molestiae tempora dignissimos. Ex, neque tenetur quos, pariatur, culpa
+      soluta cumque consectetur aperiam eaque corrupti sit veritatis atque.
+      Aperiam, vero.
+    </p>
+
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum
+      molestiae tempora dignissimos. Ex, neque tenetur quos, pariatur, culpa
+      soluta cumque consectetur aperiam eaque corrupti sit veritatis atque.
+      Aperiam, vero.
+    </p>
+
+    <a id="top" href="#">Top</a>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(window).scroll(function () {
+        let sh = $(document).scrollTop();
+        let h = $(document).height();
+        if (sh > h / 3) {
+          $("#top").css({ display: "block" });
+        } else {
+          $("#top").css({ display: "none" });
+        }
+        console.log(h);
+      });
+    </script>
+  </body>
+</html>

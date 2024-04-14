@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        border: 10px solid red;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Get Dimension</button>
+    <div class="box">Box</div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          const w = $(".box").outerWidth(true);
+          alert(w);
+        });
+      });
+    </script>
+  </body>
+</html>
